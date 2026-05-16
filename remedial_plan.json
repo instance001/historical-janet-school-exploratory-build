@@ -1,0 +1,8 @@
+{
+  "janet_version": "MCM-v0.1",
+  "stage": "Early curriculum (Grade 0\u20130.5)",
+  "episodes_file": "memory\\episodes.jsonl",
+  "health_threshold": 0.7,
+  "weak_organs": [],
+  "recommendations": []
+}

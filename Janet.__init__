@@ -1,0 +1,5 @@
+class Janet:
+    def __init__(self, backend: Optional[LLMBackend] = None):
+        self.backend = backend or Chatty20BBackend()
+        self.organs = self._load_organs()
+        ...

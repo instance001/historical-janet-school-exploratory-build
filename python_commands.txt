@@ -1,0 +1,21 @@
+python teacher_miss_gpt.py --grade 0.5
+
+python run_school_day.py --grade 0.5
+
+python audit_inner_monologue.py
+
+python telemetry_cli.py
+
+from pathlib import Path
+from telemetry_engine import build_telemetry
+
+snapshot = build_telemetry(Path("episodes.jsonl"))
+spo_health = snapshot["organs"]["Sequence Perception Organ (SPO)"]["health"]
+
+cd C:\Users\User\Desktop\Janet_Build
+python telemetry_cli.py          # optional – remediate will build if missing
+python remediate.py
+
+Generate {N} new Grade 0/0.5 remedial lessons for concept(s): Nested Pattern
+Focus on strengthening Janet's understanding while reducing spirals and encouraging clear, concise restatements.
+

@@ -1,0 +1,10 @@
+**Restatement:**  
+"Invent Your Own Pattern" involves creating a unique sequence using shapes, colors, or numbers. You choose the elements, arrange them in an order, repeat this sequence, and determine what comes next when asked.
+
+**Steps:**
+1. **Choose Elements**: Select items like colors (red, blue), shapes (circle, square), or numbers.
+2. **Set Order**: Decide the sequence of these elements.
+3. **Repeat Pattern**: Continue the sequence by repeating the chosen order.
+4. **Determine Next Element**: Identify what comes next in the pattern when requested.
+
+This approach guides you through inventing and extending your own patterns effectively.

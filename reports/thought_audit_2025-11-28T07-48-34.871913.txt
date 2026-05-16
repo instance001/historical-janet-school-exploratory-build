@@ -1,0 +1,8 @@
+**Restatement**: "Invent Your Own Pattern" involves creating a sequence using colors, shapes, or numbers that repeats in a specific order. The goal is to determine the continuation of this pattern.
+
+**Steps**:
+1. **Choose Elements**: Select elements such as colors (e.g., Red, Blue), shapes (e.g., Circle, Square), or numbers.
+2. **Set the Order**: Arrange these elements in the sequence you want them to follow.
+3. **Extend the Sequence**: Continue the pattern by repeating the order until you are asked for the next element.
+
+This approach allows for understanding and predicting the continuation of simple repeating patterns, which is foundational for recognizing more complex sequences later.

@@ -1,0 +1,205 @@
+{
+  "janet_version": "MCM-v0.1",
+  "stage": "Early curriculum (Grade 0\u20130.5)",
+  "episodes_file": "memory\\episodes.jsonl",
+  "global": {
+    "total_episodes": 27,
+    "avg_spiral_per_episode": 0.18518518518518517,
+    "idk_rate": 0.2222222222222222,
+    "stability_index": 0.9814814814814815,
+    "coherence_index": 0.7777777777777778,
+    "avg_monologue_tokens": 24.333333333333332
+  },
+  "concepts": {
+    "same_different": {
+      "episodes": 5,
+      "grades": [
+        "0",
+        "0"
+      ],
+      "avg_monologue_chars": 391.4,
+      "avg_monologue_tokens": 70.6,
+      "avg_spiral_score": 1.0,
+      "idk_rate": 0.4
+    },
+    "sequence_next": {
+      "episodes": 5,
+      "grades": [
+        "0",
+        "0"
+      ],
+      "avg_monologue_chars": 192.0,
+      "avg_monologue_tokens": 31.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.2
+    },
+    "more": {
+      "episodes": 5,
+      "grades": [
+        "0",
+        "0"
+      ],
+      "avg_monologue_chars": 131.6,
+      "avg_monologue_tokens": 24.6,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.2
+    },
+    "Simple Alternation": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Double Alternation": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Long-cycle Repeat": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 96.0,
+      "avg_monologue_tokens": 15.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Reversed Cycle": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 1.0
+    },
+    "Mixed-feature Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Shape/shape/number Combo": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Offset Numeric Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Two-variable Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Distractor-element Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Nested Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 1.0
+    },
+    "Find the Missing Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    },
+    "Invent Your Own Pattern": {
+      "episodes": 1,
+      "grades": [
+        "0.5"
+      ],
+      "avg_monologue_chars": 0.0,
+      "avg_monologue_tokens": 1.0,
+      "avg_spiral_score": 0.0,
+      "idk_rate": 0.0
+    }
+  },
+  "organs": {
+    "Sequence Perception Organ (SPO)": {
+      "episodes": 27,
+      "avg_spiral": 0.18518518518518517,
+      "health": 0.9814814814814815
+    },
+    "Rule Extraction Organ (REO)": {
+      "episodes": 27,
+      "avg_spiral": 0.18518518518518517,
+      "health": 0.9814814814814815
+    },
+    "Bidirectional Reasoning Organ (BRO)": {
+      "episodes": 1,
+      "avg_spiral": 0.0,
+      "health": 1.0
+    },
+    "Nested Pattern Organ (NPO)": {
+      "episodes": 1,
+      "avg_spiral": 0.0,
+      "health": 1.0
+    },
+    "Distractor Inhibition Organ (DIO)": {
+      "episodes": 1,
+      "avg_spiral": 0.0,
+      "health": 1.0
+    },
+    "Pattern Continuation Organ (PCO)": {
+      "episodes": 10,
+      "avg_spiral": 0.0,
+      "health": 1.0
+    },
+    "Meta-Restatement Organ (MRO)": {
+      "episodes": 27,
+      "avg_spiral": 0.18518518518518517,
+      "health": 0.9814814814814815
+    }
+  }
+}
