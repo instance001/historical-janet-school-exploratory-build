@@ -4,16 +4,16 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 
 from backend_chatty20b import Chatty20BBackend
+from janet_paths import PACKAGE_ROOT, base_dir, ensure_runtime_dirs
 
 # ---------- Paths ----------
 
-BASE_DIR = Path(__file__).resolve().parent
-ORGANS_DIR = BASE_DIR / "organs"
+BASE_DIR = base_dir()
+ORGANS_DIR = PACKAGE_ROOT / "organs"
 MEMORY_DIR = BASE_DIR / "memory"
 LOGS_DIR = BASE_DIR / "logs" / "sessions"
 
-MEMORY_DIR.mkdir(parents=True, exist_ok=True)
-LOGS_DIR.mkdir(parents=True, exist_ok=True)
+ensure_runtime_dirs()
 
 
 # ---------- Backend Interface ----------

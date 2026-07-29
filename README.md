@@ -6,6 +6,14 @@ The project used a human-facing, special-education-style school curriculum as th
 
 This repository is not an active project and is not expected to receive further development.
 
+## Portable Run Note
+
+Runtime files are written beside the repository by default. Set
+`HISTORICAL_JANET_BASE_PATH` to redirect writable state such as `memory/`,
+`logs/`, `reports/`, telemetry, and remedial-plan outputs. Bundled historical
+assets such as `organs/` and `school/` remain loaded from the repository unless
+you generate replacement lessons under the override base.
+
 ## Purpose
 
 The purpose of this build was exploratory.

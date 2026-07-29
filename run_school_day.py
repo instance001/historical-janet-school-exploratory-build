@@ -3,9 +3,10 @@ import json
 from pathlib import Path
 
 from janet import Janet
+from janet_paths import PACKAGE_ROOT, base_dir
 
-BASE_DIR = Path(__file__).resolve().parent
-SCHOOL_DIR = BASE_DIR / "school"
+BASE_DIR = base_dir()
+SCHOOL_DIR = BASE_DIR / "school" if (BASE_DIR / "school").exists() else PACKAGE_ROOT / "school"
 
 
 def grade_to_dirname(grade: str) -> str:

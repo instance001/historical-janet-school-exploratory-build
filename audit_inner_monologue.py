@@ -2,11 +2,12 @@ import json
 from pathlib import Path
 from datetime import datetime
 from backend_miss_gpt import MissGPTBackend
+from janet_paths import base_dir, ensure_runtime_dirs
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = base_dir()
 MEMORY_DIR = BASE_DIR / "memory"
 REPORTS_DIR = BASE_DIR / "reports"
-REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+ensure_runtime_dirs()
 
 CONCEPTS_PATH = MEMORY_DIR / "concepts.jsonl"
 

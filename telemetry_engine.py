@@ -2,10 +2,11 @@ import json
 from pathlib import Path
 from typing import Dict, Any, List
 
+from janet_paths import resolve_path
 
-EPISODES_FILE = "memory/episodes.jsonl"
-TELEMETRY_JSON = "telemetry_log.json"
-TELEMETRY_MD = "telemetry_log.md"
+EPISODES_FILE = resolve_path("memory/episodes.jsonl")
+TELEMETRY_JSON = resolve_path("telemetry_log.json")
+TELEMETRY_MD = resolve_path("telemetry_log.md")
 
 
 def load_episodes(path: Path) -> List[Dict[str, Any]]:
@@ -13,7 +14,7 @@ def load_episodes(path: Path) -> List[Dict[str, Any]]:
     episodes: List[Dict[str, Any]] = []
     if not path.exists():
         raise FileNotFoundError(f"episodes file not found: {path}")
-    with path.open("r", encoding="utf-8") as f:
+    with path.open("r", encoding="utf-8-sig") as f:
         for line in f:
             line = line.strip()
             if not line:

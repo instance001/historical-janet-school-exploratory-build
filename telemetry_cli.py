@@ -9,6 +9,7 @@ from telemetry_engine import (
     write_json,
     write_markdown,
 )
+from janet_paths import resolve_path
 
 
 def main() -> None:
@@ -36,15 +37,17 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    episodes_path = Path(args.episodes)
+    episodes_path = resolve_path(args.episodes)
     telemetry = build_telemetry(episodes_path)
 
-    write_json(telemetry, Path(args.out_json))
-    write_markdown(telemetry, Path(args.out_md))
+    out_json = resolve_path(args.out_json)
+    out_md = resolve_path(args.out_md)
+    write_json(telemetry, out_json)
+    write_markdown(telemetry, out_md)
 
     print(f"[telemetry] Read episodes from: {episodes_path}")
-    print(f"[telemetry] Wrote JSON to:    {args.out_json}")
-    print(f"[telemetry] Wrote Markdown to: {args.out_md}")
+    print(f"[telemetry] Wrote JSON to:    {out_json}")
+    print(f"[telemetry] Wrote Markdown to: {out_md}")
 
 
 if __name__ == "__main__":

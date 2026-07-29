@@ -10,6 +10,7 @@ from telemetry_engine import (
     write_json,
     write_markdown,
 )
+from janet_paths import resolve_path
 
 # Output files for the remedial planner
 REMEDIAL_JSON = "remedial_plan.json"
@@ -62,7 +63,7 @@ def load_or_build_telemetry(
     # Fallback: build telemetry from episodes
     telemetry = build_telemetry(episodes_path)
     write_json(telemetry, telemetry_path)
-    write_markdown(telemetry, Path("telemetry_log.md"))
+    write_markdown(telemetry, resolve_path("telemetry_log.md"))
     return telemetry
 
 
@@ -355,18 +356,20 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    telemetry_path = Path(args.telemetry)
-    episodes_path = Path(args.episodes)
+    telemetry_path = resolve_path(args.telemetry)
+    episodes_path = resolve_path(args.episodes)
 
     telemetry = load_or_build_telemetry(telemetry_path, episodes_path)
     plan = build_remedial_plan(telemetry, health_threshold=args.threshold)
 
-    write_remedial_json(plan, Path(args.out_json))
-    write_remedial_md(plan, Path(args.out_md))
+    out_json = resolve_path(args.out_json)
+    out_md = resolve_path(args.out_md)
+    write_remedial_json(plan, out_json)
+    write_remedial_md(plan, out_md)
 
     print(f"[remediate] Using telemetry: {telemetry_path}")
-    print(f"[remediate] Wrote remedial JSON to: {args.out_json}")
-    print(f"[remediate] Wrote remedial Markdown to: {args.out_md}")
+    print(f"[remediate] Wrote remedial JSON to: {out_json}")
+    print(f"[remediate] Wrote remedial Markdown to: {out_md}")
 
 
 if __name__ == "__main__":

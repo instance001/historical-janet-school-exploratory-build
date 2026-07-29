@@ -2,8 +2,9 @@ import argparse
 from pathlib import Path
 
 from backend_miss_gpt import MissGPTBackend
+from janet_paths import base_dir
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = base_dir()
 SCHOOL_DIR = BASE_DIR / "school"
 
 

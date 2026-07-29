@@ -12,7 +12,7 @@ from telemetry_engine import build_telemetry
 snapshot = build_telemetry(Path("episodes.jsonl"))
 spo_health = snapshot["organs"]["Sequence Perception Organ (SPO)"]["health"]
 
-cd C:\Users\User\Desktop\Janet_Build
+cd path\to\historical-janet-school-exploratory-build
 python telemetry_cli.py          # optional – remediate will build if missing
 python remediate.py
 
