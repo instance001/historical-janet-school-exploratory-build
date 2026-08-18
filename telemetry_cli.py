@@ -14,7 +14,7 @@ from janet_paths import resolve_path
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Janet telemetry CLI – build JSON + Markdown logs from episodes.jsonl"
+        description="Janet telemetry CLI - build JSON + Markdown logs from episodes.jsonl"
     )
     parser.add_argument(
         "--episodes",
